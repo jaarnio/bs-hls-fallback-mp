@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iHeartMedia</title>
+    <style>
+      body {
+        background-color: #ffffff00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        color: rgba(255, 255, 255, 0.214);
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>iHeartMedia:</h1>
+    <div id="status-container">
+      <h1 id="status">Checking...</h1>
+    </div>
+    <audio id="audio"></audio>
+
+    <script>
+      // Using this as a switch so I don't forcibly restart the stream if its current state is correct
+      let online;
+
+      // Get the audio elements
+      const audio = document.getElementById("audio");
+
+      // Streaming proxy server endpoint
+      const streamEndpoint = "http://localhost:3000/stream";
+      // Local music files endpoint
+      const musicEndpoint = "http://localhost:3000/music";
+      // Sample API endpoint for play count tracking
+      const apiEndpoint = "https://jsonplaceholder.typicode.com/todos/";
+
+      // Function to fetch and play an audio file
+      function fetchAudioPlayFile(audioFile) {
+        fetch(audioFile)
+          .then((response) => {
+            audio.src = "";
+          })
+          .then((_) => {
+            audio.src = audioFile;
+            console.log("Audio source:", audio.src);
+            return audio.play();
+          })
+          .then((_) => {
+            console.log("Audio play successful.");
+          })
+          .catch((error) => {
+            console.error("Audio play error:", error);
+          });
+      }
+
+      // Function to play the stream
+      function playStream() {
+        fetch(streamEndpoint)
+          .then((response) => {
+            online = true;
+            audio.src = streamEndpoint;
+            return audio.play();
+          })
+          .then((_) => {
+            console.log("Stream play successful.");
+          })
+          .catch((error) => {
+            console.error("Stream play error:", error);
+          });
+      }
+
+      // Function to play the music
+      function playMusic() {
+        // Fetch the list of MP3 files
+        fetch("http://localhost:3000/music")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("List of MP3 files:", data);
+
+            // Initialize the current track index
+            let currentTrackIndex = 0;
+
+            // Function to play the next track in the playlist
+            function playNextTrack() {
+              if (currentTrackIndex < data.length) {
+                const mp3File = data[currentTrackIndex];
+                console.log(`Playing: ${mp3File}`);
+
+                // Set the source of the audio element to the current MP3 file
+                //audio.src = "/music/" + mp3File;
+                audio.load();
+                fetchAudioPlayFile("/music/" + mp3File);
+                online = false;
+
+                // Make a sample API call to a server to track playcounts
+                fetch(
+                  `https://jsonplaceholder.typicode.com/todos/${currentTrackIndex + 1}`
+                )
+                  .then((response) => response.json())
+                  .then((todoData) => {
+                    console.log("API Response:", todoData);
+                    currentTrackIndex++;
+
+                    // Play the next track after the audio has finished
+                    audio.onended = playNextTrack;
+                  })
+                  .catch((error) => {
+                    console.error("API Error:", error);
+                  });
+              } else {
+                console.log("Playlist completed.");
+                playMusic();
+              }
+            }
+
+            // Start playing the playlist
+            playNextTrack();
+          })
+          .catch((error) => {
+            console.error("Fetch Error:", error);
+          });
+      }
+
+      // Create a WebSocket connection to the server
+      const socket = new WebSocket("ws://localhost:3001");
+
+      // Update the stream status based on WebSocket messages.  Call the appropriate function to play the stream or music.
+      socket.addEventListener("message", (event) => {
+        const data = JSON.parse(event.data);
+        // Change the onscreen status
+        const statusElement = document.getElementById("status");
+
+        if (data.isStreamAvailable) {
+          statusElement.textContent = "Online";
+          // Only play the stream if it's not already playing
+          if (online !== true) {
+            console.log("Stream is online. Starting stream...");
+            playStream();
+          } else {
+            console.log("Stream is online. Stream already playing.");
+          }
+        } else {
+          statusElement.textContent = "Offline";
+          // Only play the music if it's not already playing
+          if (online !== false) {
+            console.log("Stream is offline. Starting locally...");
+            playMusic();
+          } else {
+            console.log("Stream is offline. Music already playing.");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "hls-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@warren-bank/hls-proxy": "^3.4.0",
+    "axios": "^1.5.1",
+    "express": "^4.18.2",
+    "express-http-proxy": "^2.0.0",
+    "http-proxy-middleware": "^2.0.6",
+    "ws": "^8.14.2"
+  }
+}
