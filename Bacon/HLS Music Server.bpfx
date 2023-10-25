@@ -30,7 +30,7 @@
         "htmlEnableJavascriptConsole": false,
         "alphabetizeVariableNames": false,
         "autoCreateMediaCounterVariables": false,
-        "resetVariablesOnPresentationStart": false,
+        "resetVariablesOnPresentationStart": true,
         "networkedVariablesUpdateInterval": 300,
         "delayScheduleChangeUntilMediaEndEvent": false,
         "language": "English",
@@ -497,7 +497,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2023-10-25T07:37:48.225Z"
+      "lastModifiedTime": "2023-10-25T08:47:05.759Z"
     },
     "zones": {
       "zonesById": {
@@ -606,7 +606,7 @@
         "9f517bc2-4ac3-4000-a44d-937498f1e000"
       ],
       "zoneTagIndices": {
-        "5507b640-4dce-4000-ae43-f80613f2a000": 8
+        "5507b640-4dce-4000-ae43-f80613f2a000": 9
       }
     },
     "screens": {
@@ -627,30 +627,6 @@
             "name": "Event Handler",
             "type": "EventHandler",
             "stopPlayback": false
-          }
-        },
-        "1c7b75e0-62ce-4000-a7b8-455fcfc6c000": {
-          "id": "1c7b75e0-62ce-4000-a7b8-455fcfc6c000",
-          "name": "HTML 5",
-          "tag": "3",
-          "container": {
-            "id": "5507b640-4dce-4000-ae43-f80613f2a000",
-            "type": 0
-          },
-          "contentItem": {
-            "name": "HTML 5",
-            "type": "Html",
-            "siteId": "c86eab0e-66dd-4000-a424-cff124c91000",
-            "enableBrightSignJavascriptObjects": false,
-            "enableCrossDomainPolicyChecks": false,
-            "ignoreHttpsCertificateErrors": false,
-            "enableCamera": false,
-            "enableMouseEvents": true,
-            "displayCursor": false,
-            "hwzOn": true,
-            "useUserStylesheet": false,
-            "enableFileURLSharedStorage": true,
-            "enableHtmlURLSharedStorage": false
           }
         },
         "17b8d801-44fe-4000-afef-252c17e2e000": {
@@ -903,17 +879,6 @@
       }
     },
     "events": {
-      "3645a77b-0da4-4000-af9c-42bcc3e0d000": {
-        "id": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
-        "name": "Event Handler_ev_ev",
-        "type": "Timer",
-        "mediaStateId": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
-        "disabled": false,
-        "data": {
-          "interval": 6
-        },
-        "action": "None"
-      },
       "03ef5df1-e83b-4000-a92b-22acdc7db000": {
         "id": "03ef5df1-e83b-4000-a92b-22acdc7db000",
         "name": "Media End Event",
@@ -922,14 +887,106 @@
         "disabled": false,
         "data": null,
         "action": "SeqFwd"
+      },
+      "ad171750-8982-4000-a501-23b2f2a33000": {
+        "id": "ad171750-8982-4000-a501-23b2f2a33000",
+        "name": "Stream_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+        "disabled": false,
+        "data": {
+          "data": "offline",
+          "label": "offline",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
+      },
+      "9695e69c-41d1-4000-acba-371175756000": {
+        "id": "9695e69c-41d1-4000-acba-371175756000",
+        "name": "Media List_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
+        "disabled": false,
+        "data": {
+          "data": "online",
+          "label": "online",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
+      },
+      "a201d227-1cf0-4000-a7ed-0729cc448000": {
+        "id": "a201d227-1cf0-4000-a7ed-0729cc448000",
+        "name": "Event Handler_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
+        "disabled": false,
+        "data": {
+          "data": "offline",
+          "label": "offline",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
+      },
+      "dfe96e7d-07f8-4000-a6d5-b85b75621000": {
+        "id": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
+        "name": "Event Handler_ev_ev",
+        "type": "Udp",
+        "mediaStateId": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
+        "disabled": false,
+        "data": {
+          "data": "online",
+          "label": "online",
+          "export": true,
+          "assignInputToUserVariable": false,
+          "assignWildcardToUserVariable": false,
+          "userVariableToAssignInput": "0",
+          "userVariableToAssignWildcard": "0"
+        },
+        "action": "None"
       }
     },
     "transitions": {
       "transitionsById": {
-        "c0846e12-bbde-4000-a98b-a52d272c7000": {
-          "id": "c0846e12-bbde-4000-a98b-a52d272c7000",
+        "5a200344-6c97-4000-a295-611b688cd000": {
+          "id": "5a200344-6c97-4000-a295-611b688cd000",
+          "name": "Stream_ev_tr",
+          "eventId": "ad171750-8982-4000-a501-23b2f2a33000",
+          "targetMediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
+          "type": "No effect",
+          "duration": 0
+        },
+        "9ea26f29-1b77-4000-a794-912b19907000": {
+          "id": "9ea26f29-1b77-4000-a794-912b19907000",
+          "name": "Media List_ev_tr",
+          "eventId": "9695e69c-41d1-4000-acba-371175756000",
+          "targetMediaStateId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+          "type": "No effect",
+          "duration": 0
+        },
+        "15ec9000-009f-4000-a486-72ad0f690000": {
+          "id": "15ec9000-009f-4000-a486-72ad0f690000",
           "name": "Event Handler_ev_tr",
-          "eventId": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
+          "eventId": "a201d227-1cf0-4000-a7ed-0729cc448000",
+          "targetMediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
+          "type": "No effect",
+          "duration": 0
+        },
+        "9aa26e87-3da8-4000-abc6-406f63b15000": {
+          "id": "9aa26e87-3da8-4000-abc6-406f63b15000",
+          "name": "Event Handler_ev_tr",
+          "eventId": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
           "targetMediaStateId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
           "type": "No effect",
           "duration": 0
@@ -941,24 +998,7 @@
       "commandsById": {},
       "sequencesById": {}
     },
-    "htmlSites": {
-      "c86eab0e-66dd-4000-a424-cff124c91000": {
-        "id": "c86eab0e-66dd-4000-a424-cff124c91000",
-        "type": "Remote",
-        "name": "HTML 5 Site",
-        "queryString": {
-          "params": []
-        },
-        "url": {
-          "params": [
-            {
-              "type": "Text",
-              "value": "http://localhost:3000"
-            }
-          ]
-        }
-      }
-    },
+    "htmlSites": {},
     "nodeApps": {
       "d24f240a-6999-4000-aefd-ca0b15211000": {
         "id": "d24f240a-6999-4000-aefd-ca0b15211000",
@@ -971,8 +1011,46 @@
       "sourcesById": {}
     },
     "userVariables": {
-      "variablesById": {},
-      "sequence": []
+      "variablesById": {
+        "5139445a-eea9-4000-afe1-e9012bcf5000": {
+          "id": "5139445a-eea9-4000-afe1-e9012bcf5000",
+          "name": "udpMessage",
+          "defaultValue": {
+            "params": [
+              {
+                "type": "Text",
+                "value": "---"
+              }
+            ]
+          },
+          "access": "Private",
+          "isNetworked": false,
+          "dataFeedId": "0",
+          "systemVariable": null,
+          "data": null
+        },
+        "5c845a64-b980-4000-a0fd-5e6731b94000": {
+          "id": "5c845a64-b980-4000-a0fd-5e6731b94000",
+          "name": "var2",
+          "defaultValue": {
+            "params": [
+              {
+                "type": "Text",
+                "value": "---"
+              }
+            ]
+          },
+          "access": "Private",
+          "isNetworked": false,
+          "dataFeedId": "0",
+          "systemVariable": null,
+          "data": null
+        }
+      },
+      "sequence": [
+        "5139445a-eea9-4000-afe1-e9012bcf5000",
+        "5c845a64-b980-4000-a0fd-5e6731b94000"
+      ]
     },
     "liveText": {
       "itemsById": {},
@@ -1190,8 +1268,8 @@
       "name": "Zone 1: Video or Image"
     },
     "selectionEntities": {
-      "3645a77b-0da4-4000-af9c-42bcc3e0d000": {
-        "id": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
+      "dfe96e7d-07f8-4000-a6d5-b85b75621000": {
+        "id": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
         "type": "Event",
         "selectableType": "TRANSITION",
         "selectableData": null
@@ -1224,13 +1302,6 @@
           "y": -60
         }
       },
-      "1c7b75e0-62ce-4000-a7b8-455fcfc6c000": {
-        "id": "1c7b75e0-62ce-4000-a7b8-455fcfc6c000",
-        "position": {
-          "x": 300,
-          "y": -60
-        }
-      },
       "17b8d801-44fe-4000-afef-252c17e2e000": {
         "id": "17b8d801-44fe-4000-afef-252c17e2e000",
         "position": {
@@ -1241,7 +1312,7 @@
       "7080095d-4cfb-4000-a2f7-2f9d7764b000": {
         "id": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
         "position": {
-          "x": 540,
+          "x": 300,
           "y": -60
         }
       }
@@ -1254,11 +1325,6 @@
       },
       "e066591b-5e78-4000-a52d-22b2c1e37000": {
         "id": "e066591b-5e78-4000-a52d-22b2c1e37000",
-        "displayType": "DisplayLabel",
-        "labelLocation": "Bottom"
-      },
-      "3645a77b-0da4-4000-af9c-42bcc3e0d000": {
-        "id": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
       },
@@ -1281,6 +1347,36 @@
         "id": "5a9697b2-0118-4000-a2e2-4366e61e9000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
+      },
+      "ad171750-8982-4000-a501-23b2f2a33000": {
+        "id": "ad171750-8982-4000-a501-23b2f2a33000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "9695e69c-41d1-4000-acba-371175756000": {
+        "id": "9695e69c-41d1-4000-acba-371175756000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "2619e5b5-2dce-4000-a8b2-9e41462e8000": {
+        "id": "2619e5b5-2dce-4000-a8b2-9e41462e8000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "7b01e93d-732a-4000-ab56-bdc1fdeb2000": {
+        "id": "7b01e93d-732a-4000-ab56-bdc1fdeb2000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "a201d227-1cf0-4000-a7ed-0729cc448000": {
+        "id": "a201d227-1cf0-4000-a7ed-0729cc448000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "dfe96e7d-07f8-4000-a6d5-b85b75621000": {
+        "id": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
       }
     },
     "viewTransformByZoneId": {
@@ -1290,9 +1386,9 @@
         "k": 1.5
       },
       "5507b640-4dce-4000-ae43-f80613f2a000": {
-        "x": 633.8058258449444,
-        "y": 212,
-        "k": 1.5
+        "x": 516,
+        "y": 144,
+        "k": 1
       }
     },
     "isLoaderEnabled": false

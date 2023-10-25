@@ -1,6 +1,7 @@
 const express = require("express");
 const http = require("http");
 const axios = require("axios");
+const FormData = require("form-data");
 const path = require("path");
 const fs = require("fs");
 const WebSocket = require("ws");
@@ -35,14 +36,29 @@ const broadcastMessage = (message) => {
   });
 };
 
+// Send UDP Message to Ba:con front end
+async function sendUDPMessage(message) {
+  try {
+    let data = new FormData();
+    let config = { headers: { "Content-Type": "multipart/form-data" } };
+    data.append("key", message);
+    const response = await axios.post("http://localhost:8008/SendUDP", data, config);
+    console.log("Response from server:", response.data);
+  } catch (error) {
+    console.error("Error sending POST request:", error);
+  }
+}
+
 const checkStreamAvailability = async () => {
   try {
     const response = await axios.head(livestreamUrl);
     // This just checks for a 200 response. May need better checks for health of stream?
     const isStreamAvailable = response.status === 200;
     broadcastMessage(JSON.stringify({ isStreamAvailable }));
+    sendUDPMessage("online");
   } catch (error) {
     broadcastMessage(JSON.stringify({ isStreamAvailable: false }));
+    sendUDPMessage("offline");
   }
 };
 
