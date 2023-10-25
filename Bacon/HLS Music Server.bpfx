@@ -497,15 +497,15 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2023-10-24T21:19:31.559Z"
+      "lastModifiedTime": "2023-10-25T07:37:48.225Z"
     },
     "zones": {
       "zonesById": {
         "5507b640-4dce-4000-ae43-f80613f2a000": {
           "id": "5507b640-4dce-4000-ae43-f80613f2a000",
           "name": "Zone 1",
-          "type": "Images",
-          "tag": "Images0",
+          "type": "VideoOrImages",
+          "tag": "VideoOrImages0",
           "nonInteractive": false,
           "initialMediaStateId": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
           "position": {
@@ -516,6 +516,52 @@
             "pct": false
           },
           "properties": {
+            "viewMode": "Scale to Fill",
+            "videoVolume": 100,
+            "maxContentResolution": "HD",
+            "brightness": 128,
+            "contrast": 64,
+            "saturation": 64,
+            "hue": 0,
+            "zOrderFront": true,
+            "mosaic": false,
+            "audioOutput": "Analog",
+            "audioMode": "Stereo",
+            "audioMapping": "Audio1",
+            "audioOutputAssignments": {
+              "analog1": "Pcm",
+              "analog2": "None",
+              "analog3": "None",
+              "usbA": "None",
+              "usbB": "None",
+              "usbC": "None",
+              "usbD": "None",
+              "usbTypeA": "None",
+              "usbTypeC": "None",
+              "usb700_1": "None",
+              "usb700_2": "None",
+              "usb700_3": "None",
+              "usb700_4": "None",
+              "usb700_5": "None",
+              "usb700_6": "None",
+              "usb700_7": "None",
+              "usb_1": "None",
+              "usb_2": "None",
+              "usb_3": "None",
+              "usb_4": "None",
+              "usb_5": "None",
+              "usb_6": "None",
+              "spdif": "Pcm",
+              "hdmi": "Pcm",
+              "hdmi1": "Pcm",
+              "hdmi2": "None",
+              "hdmi3": "None",
+              "hdmi4": "None"
+            },
+            "audioMixMode": "Stereo",
+            "audioVolume": 100,
+            "minimumVolume": 0,
+            "maximumVolume": 100,
             "imageMode": "Scale to Fill and Crop"
           }
         }
@@ -544,7 +590,9 @@
         "9f517bc2-4ac3-4000-a44d-937498f1e000": {
           "id": "9f517bc2-4ac3-4000-a44d-937498f1e000",
           "type": "Video",
-          "zoneSequence": [],
+          "zoneSequence": [
+            "5507b640-4dce-4000-ae43-f80613f2a000"
+          ],
           "zoneLayerSpecificProperties": {
             "type": "HD",
             "index": 0,
@@ -558,7 +606,7 @@
         "9f517bc2-4ac3-4000-a44d-937498f1e000"
       ],
       "zoneTagIndices": {
-        "5507b640-4dce-4000-ae43-f80613f2a000": 4
+        "5507b640-4dce-4000-ae43-f80613f2a000": 8
       }
     },
     "screens": {
@@ -604,9 +652,255 @@
             "enableFileURLSharedStorage": true,
             "enableHtmlURLSharedStorage": false
           }
+        },
+        "17b8d801-44fe-4000-afef-252c17e2e000": {
+          "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+          "name": "Media List",
+          "tag": "6",
+          "container": {
+            "id": "5507b640-4dce-4000-ae43-f80613f2a000",
+            "type": 0
+          },
+          "contentItem": {
+            "name": "Media List",
+            "type": "MediaList",
+            "playbackType": "FromBeginning",
+            "startIndex": 0,
+            "shuffle": true,
+            "support4KImage": false,
+            "sendMediaZoneMessage": false,
+            "useDataFeed": false,
+            "dataFeedId": "0",
+            "transition": "No effect",
+            "transitionDuration": 1,
+            "autoTransitions": false,
+            "inactivityTimeout": false,
+            "inactivityTime": 0
+          }
+        },
+        "4d82a678-153f-4000-a04d-8f3f33e7b000": {
+          "id": "4d82a678-153f-4000-a04d-8f3f33e7b000",
+          "name": "02-linkin_park-dont_stay.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "02-linkin_park-dont_stay.mp3",
+            "type": "Audio",
+            "assetId": "23ded42a-ba46-4000-a256-d566fc823000",
+            "volume": 100
+          }
+        },
+        "ad63a472-5648-4000-a838-2e860c2ed000": {
+          "id": "ad63a472-5648-4000-a838-2e860c2ed000",
+          "name": "03-linkin_park-somewhere_i_belong.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "03-linkin_park-somewhere_i_belong.mp3",
+            "type": "Audio",
+            "assetId": "f215327f-b4fb-4000-a65d-f8280af8f000",
+            "volume": 100
+          }
+        },
+        "c4da2391-8e59-4000-acf0-3a7fbfb28000": {
+          "id": "c4da2391-8e59-4000-acf0-3a7fbfb28000",
+          "name": "04-linkin_park-lying_from_you.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "04-linkin_park-lying_from_you.mp3",
+            "type": "Audio",
+            "assetId": "3be8b03d-6650-4000-a7f5-b9084afca000",
+            "volume": 100
+          }
+        },
+        "9ab7eb90-eb05-4000-a8c0-1d516fa7c000": {
+          "id": "9ab7eb90-eb05-4000-a8c0-1d516fa7c000",
+          "name": "05-linkin_park-hit_the_floor.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "05-linkin_park-hit_the_floor.mp3",
+            "type": "Audio",
+            "assetId": "b8025d60-5081-4000-aac0-1d3c6480e000",
+            "volume": 100
+          }
+        },
+        "ce513351-199e-4000-a203-74d7a3144000": {
+          "id": "ce513351-199e-4000-a203-74d7a3144000",
+          "name": "06-linkin_park-easier_to_run.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "06-linkin_park-easier_to_run.mp3",
+            "type": "Audio",
+            "assetId": "415e7606-5343-4000-a783-b97c3b3de000",
+            "volume": 100
+          }
+        },
+        "378c2d0d-cab4-4000-adce-1755adef7000": {
+          "id": "378c2d0d-cab4-4000-adce-1755adef7000",
+          "name": "07-linkin_park-faint.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "07-linkin_park-faint.mp3",
+            "type": "Audio",
+            "assetId": "91fde9bb-5f10-4000-a094-c666d4a5a000",
+            "volume": 100
+          }
+        },
+        "6cb6d1d6-7957-4000-acd0-43fee1cf2000": {
+          "id": "6cb6d1d6-7957-4000-acd0-43fee1cf2000",
+          "name": "08-linkin_park-figure.09.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "08-linkin_park-figure.09.mp3",
+            "type": "Audio",
+            "assetId": "789c05e5-bcf5-4000-af16-3c748898e000",
+            "volume": 100
+          }
+        },
+        "1ab70a03-c8f2-4000-a91f-f3bdbb956000": {
+          "id": "1ab70a03-c8f2-4000-a91f-f3bdbb956000",
+          "name": "09-linkin_park-breaking_the_habit.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "09-linkin_park-breaking_the_habit.mp3",
+            "type": "Audio",
+            "assetId": "3626566c-8188-4000-ad75-28ef06201000",
+            "volume": 100
+          }
+        },
+        "3a683d53-70a3-4000-a262-a17e644cf000": {
+          "id": "3a683d53-70a3-4000-a262-a17e644cf000",
+          "name": "10-linkin_park-from_the_inside.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "10-linkin_park-from_the_inside.mp3",
+            "type": "Audio",
+            "assetId": "24e8d9ae-80b3-4000-a738-fcf59f602000",
+            "volume": 100
+          }
+        },
+        "3a9e31d1-cedb-4000-a50a-f36312ae7000": {
+          "id": "3a9e31d1-cedb-4000-a50a-f36312ae7000",
+          "name": "11-linkin_park-nobodys_listening.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "11-linkin_park-nobodys_listening.mp3",
+            "type": "Audio",
+            "assetId": "4c64f288-dcd5-4000-ae1d-c7c037564000",
+            "volume": 100
+          }
+        },
+        "28d2092f-83ce-4000-a72a-148de7542000": {
+          "id": "28d2092f-83ce-4000-a72a-148de7542000",
+          "name": "12-linkin_park-session.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "12-linkin_park-session.mp3",
+            "type": "Audio",
+            "assetId": "46186ed3-1977-4000-a90b-df5432d6f000",
+            "volume": 100
+          }
+        },
+        "a5f8d375-efaf-4000-a8ad-93499e04a000": {
+          "id": "a5f8d375-efaf-4000-a8ad-93499e04a000",
+          "name": "13-linkin_park-numb.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "13-linkin_park-numb.mp3",
+            "type": "Audio",
+            "assetId": "3cd5d306-5b22-4000-a889-0da6ed3fb000",
+            "volume": 100
+          }
+        },
+        "7080095d-4cfb-4000-a2f7-2f9d7764b000": {
+          "id": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+          "name": "Stream",
+          "tag": "7",
+          "container": {
+            "id": "5507b640-4dce-4000-ae43-f80613f2a000",
+            "type": 0
+          },
+          "contentItem": {
+            "name": "Stream",
+            "type": "AudioStream",
+            "url": {
+              "params": [
+                {
+                  "type": "Text",
+                  "value": "http://localhost:3000/stream"
+                }
+              ]
+            },
+            "volume": 100
+          }
         }
       },
-      "sequencesByParentId": {}
+      "sequencesByParentId": {
+        "17b8d801-44fe-4000-afef-252c17e2e000": {
+          "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+          "parentType": 1,
+          "sequence": [
+            "4d82a678-153f-4000-a04d-8f3f33e7b000",
+            "ad63a472-5648-4000-a838-2e860c2ed000",
+            "c4da2391-8e59-4000-acf0-3a7fbfb28000",
+            "9ab7eb90-eb05-4000-a8c0-1d516fa7c000",
+            "ce513351-199e-4000-a203-74d7a3144000",
+            "378c2d0d-cab4-4000-adce-1755adef7000",
+            "6cb6d1d6-7957-4000-acd0-43fee1cf2000",
+            "1ab70a03-c8f2-4000-a91f-f3bdbb956000",
+            "3a683d53-70a3-4000-a262-a17e644cf000",
+            "3a9e31d1-cedb-4000-a50a-f36312ae7000",
+            "28d2092f-83ce-4000-a72a-148de7542000",
+            "a5f8d375-efaf-4000-a8ad-93499e04a000"
+          ]
+        }
+      }
     },
     "events": {
       "3645a77b-0da4-4000-af9c-42bcc3e0d000": {
@@ -619,6 +913,15 @@
           "interval": 6
         },
         "action": "None"
+      },
+      "03ef5df1-e83b-4000-a92b-22acdc7db000": {
+        "id": "03ef5df1-e83b-4000-a92b-22acdc7db000",
+        "name": "Media End Event",
+        "type": "MediaEnd",
+        "mediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
+        "disabled": false,
+        "data": null,
+        "action": "SeqFwd"
       }
     },
     "transitions": {
@@ -627,7 +930,7 @@
           "id": "c0846e12-bbde-4000-a98b-a52d272c7000",
           "name": "Event Handler_ev_tr",
           "eventId": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
-          "targetMediaStateId": "1c7b75e0-62ce-4000-a7b8-455fcfc6c000",
+          "targetMediaStateId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
           "type": "No effect",
           "duration": 0
         }
@@ -698,6 +1001,174 @@
         "fileSize": 767166,
         "lastModifiedDate": "2023-10-24T21:08:57.594Z",
         "refCount": 1
+      },
+      "23ded42a-ba46-4000-a256-d566fc823000": {
+        "id": "23ded42a-ba46-4000-a256-d566fc823000",
+        "name": "02-linkin_park-dont_stay.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\02-linkin_park-dont_stay.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6483814,
+        "lastModifiedDate": "2015-01-24T07:25:22.000Z",
+        "refCount": 1
+      },
+      "f215327f-b4fb-4000-a65d-f8280af8f000": {
+        "id": "f215327f-b4fb-4000-a65d-f8280af8f000",
+        "name": "03-linkin_park-somewhere_i_belong.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\03-linkin_park-somewhere_i_belong.mp3",
+        "mediaType": "Audio",
+        "fileSize": 7123813,
+        "lastModifiedDate": "2015-01-24T07:25:23.000Z",
+        "refCount": 1
+      },
+      "3be8b03d-6650-4000-a7f5-b9084afca000": {
+        "id": "3be8b03d-6650-4000-a7f5-b9084afca000",
+        "name": "04-linkin_park-lying_from_you.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\04-linkin_park-lying_from_you.mp3",
+        "mediaType": "Audio",
+        "fileSize": 5771932,
+        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
+        "refCount": 1
+      },
+      "b8025d60-5081-4000-aac0-1d3c6480e000": {
+        "id": "b8025d60-5081-4000-aac0-1d3c6480e000",
+        "name": "05-linkin_park-hit_the_floor.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\05-linkin_park-hit_the_floor.mp3",
+        "mediaType": "Audio",
+        "fileSize": 5420186,
+        "lastModifiedDate": "2015-01-24T07:25:28.000Z",
+        "refCount": 1
+      },
+      "415e7606-5343-4000-a783-b97c3b3de000": {
+        "id": "415e7606-5343-4000-a783-b97c3b3de000",
+        "name": "06-linkin_park-easier_to_run.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\06-linkin_park-easier_to_run.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6999204,
+        "lastModifiedDate": "2015-01-24T07:25:22.000Z",
+        "refCount": 1
+      },
+      "91fde9bb-5f10-4000-a094-c666d4a5a000": {
+        "id": "91fde9bb-5f10-4000-a094-c666d4a5a000",
+        "name": "07-linkin_park-faint.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\07-linkin_park-faint.mp3",
+        "mediaType": "Audio",
+        "fileSize": 5507170,
+        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
+        "refCount": 1
+      },
+      "789c05e5-bcf5-4000-af16-3c748898e000": {
+        "id": "789c05e5-bcf5-4000-af16-3c748898e000",
+        "name": "08-linkin_park-figure.09.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\08-linkin_park-figure.09.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6515186,
+        "lastModifiedDate": "2015-01-24T07:25:25.000Z",
+        "refCount": 1
+      },
+      "3626566c-8188-4000-ad75-28ef06201000": {
+        "id": "3626566c-8188-4000-ad75-28ef06201000",
+        "name": "09-linkin_park-breaking_the_habit.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\09-linkin_park-breaking_the_habit.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6353255,
+        "lastModifiedDate": "2015-01-24T07:25:33.000Z",
+        "refCount": 1
+      },
+      "24e8d9ae-80b3-4000-a738-fcf59f602000": {
+        "id": "24e8d9ae-80b3-4000-a738-fcf59f602000",
+        "name": "10-linkin_park-from_the_inside.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\10-linkin_park-from_the_inside.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6000594,
+        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
+        "refCount": 1
+      },
+      "4c64f288-dcd5-4000-ae1d-c7c037564000": {
+        "id": "4c64f288-dcd5-4000-ae1d-c7c037564000",
+        "name": "11-linkin_park-nobodys_listening.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\11-linkin_park-nobodys_listening.mp3",
+        "mediaType": "Audio",
+        "fileSize": 5680243,
+        "lastModifiedDate": "2015-01-24T07:26:05.000Z",
+        "refCount": 1
+      },
+      "46186ed3-1977-4000-a90b-df5432d6f000": {
+        "id": "46186ed3-1977-4000-a90b-df5432d6f000",
+        "name": "12-linkin_park-session.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\12-linkin_park-session.mp3",
+        "mediaType": "Audio",
+        "fileSize": 5041613,
+        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
+        "refCount": 1
+      },
+      "3cd5d306-5b22-4000-a889-0da6ed3fb000": {
+        "id": "3cd5d306-5b22-4000-a889-0da6ed3fb000",
+        "name": "13-linkin_park-numb.mp3",
+        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+        "networkId": 0,
+        "location": "Local",
+        "assetType": "Content",
+        "scope": "9560ed3374e2cc1c",
+        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\13-linkin_park-numb.mp3",
+        "mediaType": "Audio",
+        "fileSize": 6176360,
+        "lastModifiedDate": "2015-01-24T07:25:25.000Z",
+        "refCount": 1
       }
     },
     "thumbnail": {
@@ -715,19 +1186,27 @@
     "selectionContainer": {
       "id": "5507b640-4dce-4000-ae43-f80613f2a000",
       "type": "ZONE",
-      "selectableType": "ZONE"
+      "selectableType": "ZONE",
+      "name": "Zone 1: Video or Image"
     },
     "selectionEntities": {
-      "1c7b75e0-62ce-4000-a7b8-455fcfc6c000": {
-        "id": "1c7b75e0-62ce-4000-a7b8-455fcfc6c000",
-        "type": "Html",
+      "3645a77b-0da4-4000-af9c-42bcc3e0d000": {
+        "id": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
+        "type": "Event",
+        "selectableType": "TRANSITION",
+        "selectableData": null
+      }
+    },
+    "prevSelectionEntities": {
+      "71e2a7b4-bea1-4000-ac2b-f408c80b0000": {
+        "id": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
+        "type": "EventHandler",
         "selectableType": "STATE",
         "selectableData": null
       }
     },
-    "prevSelectionEntities": {},
     "isEventAdvancedEnabled": false,
-    "activeAssetMenuTab": "ASSETS"
+    "activeAssetMenuTab": "WIDGETS"
   },
   "interactiveCanvas": {
     "statePositionById": {
@@ -741,15 +1220,29 @@
       "71e2a7b4-bea1-4000-ac2b-f408c80b0000": {
         "id": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
         "position": {
-          "x": -92.79952716827393,
-          "y": -33.1666693687439
+          "x": -180,
+          "y": -60
         }
       },
       "1c7b75e0-62ce-4000-a7b8-455fcfc6c000": {
         "id": "1c7b75e0-62ce-4000-a7b8-455fcfc6c000",
         "position": {
-          "x": 117.20046997070312,
-          "y": -31.166669845581055
+          "x": 300,
+          "y": -60
+        }
+      },
+      "17b8d801-44fe-4000-afef-252c17e2e000": {
+        "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+        "position": {
+          "x": 60,
+          "y": -60
+        }
+      },
+      "7080095d-4cfb-4000-a2f7-2f9d7764b000": {
+        "id": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+        "position": {
+          "x": 540,
+          "y": -60
         }
       }
     },
@@ -768,6 +1261,26 @@
         "id": "3645a77b-0da4-4000-af9c-42bcc3e0d000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
+      },
+      "8cc6ca8c-8281-4000-a016-710847c75000": {
+        "id": "8cc6ca8c-8281-4000-a016-710847c75000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "95bf59a3-4be2-4000-a9ca-27dd3a273000": {
+        "id": "95bf59a3-4be2-4000-a9ca-27dd3a273000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "a93522c4-7f42-4000-a308-85670b0e9000": {
+        "id": "a93522c4-7f42-4000-a308-85670b0e9000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
+      },
+      "5a9697b2-0118-4000-a2e2-4366e61e9000": {
+        "id": "5a9697b2-0118-4000-a2e2-4366e61e9000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
       }
     },
     "viewTransformByZoneId": {
@@ -777,9 +1290,9 @@
         "k": 1.5
       },
       "5507b640-4dce-4000-ae43-f80613f2a000": {
-        "x": 972,
-        "y": 467,
-        "k": 1
+        "x": 633.8058258449444,
+        "y": 212,
+        "k": 1.5
       }
     },
     "isLoaderEnabled": false
