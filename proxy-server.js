@@ -3,6 +3,9 @@ const axios = require("axios");
 const FormData = require("form-data");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
+const app = express();
+const port = 3000;
+
 // Define the livestream URL
 const livestreamUrl = "http://192.168.1.154:8080/stream";
 
