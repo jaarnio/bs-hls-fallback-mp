@@ -497,7 +497,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2023-10-25T09:25:27.785Z"
+      "lastModifiedTime": "2023-10-25T09:44:22.987Z"
     },
     "zones": {
       "zonesById": {
@@ -509,8 +509,8 @@
           "nonInteractive": false,
           "initialMediaStateId": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
           "position": {
-            "width": 1920,
-            "height": 1080,
+            "width": 470.2040816352,
+            "height": 267.4953617525,
             "x": 0,
             "y": 0,
             "pct": false
@@ -564,17 +564,37 @@
             "maximumVolume": 100,
             "imageMode": "Scale to Fill and Crop"
           }
+        },
+        "21f25481-f5d1-4000-af5a-85604834b000": {
+          "id": "21f25481-f5d1-4000-af5a-85604834b000",
+          "name": "Zone 2",
+          "type": "Images",
+          "tag": "VideoOrImages1",
+          "nonInteractive": false,
+          "initialMediaStateId": "460c6d9c-25fd-4000-a76f-d64f25bda000",
+          "position": {
+            "width": 1920,
+            "height": 1080,
+            "x": 0,
+            "y": 0,
+            "pct": false
+          },
+          "properties": {
+            "imageMode": "Scale to Fill and Crop"
+          }
         }
       },
       "allZones": [
-        "5507b640-4dce-4000-ae43-f80613f2a000"
+        "5507b640-4dce-4000-ae43-f80613f2a000",
+        "21f25481-f5d1-4000-af5a-85604834b000"
       ],
       "zoneLayersById": {
         "f0696e58-43fb-4000-abbc-163fb88be000": {
           "id": "f0696e58-43fb-4000-abbc-163fb88be000",
           "type": "Graphics",
           "zoneSequence": [
-            "5507b640-4dce-4000-ae43-f80613f2a000"
+            "5507b640-4dce-4000-ae43-f80613f2a000",
+            "21f25481-f5d1-4000-af5a-85604834b000"
           ]
         },
         "0bb454e0-c222-4000-aeff-2a9dee508000": {
@@ -606,7 +626,8 @@
         "9f517bc2-4ac3-4000-a44d-937498f1e000"
       ],
       "zoneTagIndices": {
-        "5507b640-4dce-4000-ae43-f80613f2a000": 9
+        "5507b640-4dce-4000-ae43-f80613f2a000": 9,
+        "21f25481-f5d1-4000-af5a-85604834b000": 2
       }
     },
     "screens": {
@@ -720,6 +741,20 @@
             "assetId": "76684452-d7c6-4000-a1d1-e564d8612000",
             "volume": 100
           }
+        },
+        "460c6d9c-25fd-4000-a76f-d64f25bda000": {
+          "id": "460c6d9c-25fd-4000-a76f-d64f25bda000",
+          "name": "Live Text",
+          "tag": "1",
+          "container": {
+            "id": "21f25481-f5d1-4000-af5a-85604834b000",
+            "type": 0
+          },
+          "contentItem": {
+            "name": "Live Text",
+            "type": "LiveText",
+            "canvasId": "0eefd220-8e19-4000-a6f1-056e8895e000"
+          }
         }
       },
       "sequencesByParentId": {
@@ -756,7 +791,7 @@
           "export": true,
           "assignInputToUserVariable": false,
           "assignWildcardToUserVariable": false,
-          "userVariableToAssignInput": "0",
+          "userVariableToAssignInput": "5139445a-eea9-4000-afe1-e9012bcf5000",
           "userVariableToAssignWildcard": "0"
         },
         "action": "None"
@@ -773,7 +808,7 @@
           "export": true,
           "assignInputToUserVariable": false,
           "assignWildcardToUserVariable": false,
-          "userVariableToAssignInput": "0",
+          "userVariableToAssignInput": "5139445a-eea9-4000-afe1-e9012bcf5000",
           "userVariableToAssignWildcard": "0"
         },
         "action": "None"
@@ -790,7 +825,7 @@
           "export": true,
           "assignInputToUserVariable": false,
           "assignWildcardToUserVariable": false,
-          "userVariableToAssignInput": "0",
+          "userVariableToAssignInput": "5139445a-eea9-4000-afe1-e9012bcf5000",
           "userVariableToAssignWildcard": "0"
         },
         "action": "None"
@@ -807,7 +842,7 @@
           "export": true,
           "assignInputToUserVariable": false,
           "assignWildcardToUserVariable": false,
-          "userVariableToAssignInput": "0",
+          "userVariableToAssignInput": "5139445a-eea9-4000-afe1-e9012bcf5000",
           "userVariableToAssignWildcard": "0"
         },
         "action": "None"
@@ -851,8 +886,68 @@
       "sequencesByEventId": {}
     },
     "commands": {
-      "commandsById": {},
-      "sequencesById": {}
+      "commandsById": {
+        "ae3e43a6-2250-4000-a6d3-5063e4eb5000": {
+          "id": "ae3e43a6-2250-4000-a6d3-5063e4eb5000",
+          "name": "Set Variable",
+          "operations": [
+            {
+              "type": "setVariable",
+              "data": {
+                "userVariableId": "5139445a-eea9-4000-afe1-e9012bcf5000",
+                "userVariableValue": {
+                  "params": [
+                    {
+                      "type": "Text",
+                      "value": "Offline Music Player"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "sequenceId": "85ee38da-06be-4000-a6d1-e54bd9d89000"
+        },
+        "d17fe664-8094-4000-add5-f134f753f000": {
+          "id": "d17fe664-8094-4000-add5-f134f753f000",
+          "name": "Set Variable",
+          "operations": [
+            {
+              "type": "setVariable",
+              "data": {
+                "userVariableId": "5139445a-eea9-4000-afe1-e9012bcf5000",
+                "userVariableValue": {
+                  "params": [
+                    {
+                      "type": "Text",
+                      "value": "Online Music Stream"
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "sequenceId": "6bc9b72e-c7bc-4000-a19e-a78f05850000"
+        }
+      },
+      "sequencesById": {
+        "85ee38da-06be-4000-a6d1-e54bd9d89000": {
+          "id": "85ee38da-06be-4000-a6d1-e54bd9d89000",
+          "type": "StateEntry",
+          "parentId": "17b8d801-44fe-4000-afef-252c17e2e000",
+          "sequence": [
+            "ae3e43a6-2250-4000-a6d3-5063e4eb5000"
+          ]
+        },
+        "6bc9b72e-c7bc-4000-a19e-a78f05850000": {
+          "id": "6bc9b72e-c7bc-4000-a19e-a78f05850000",
+          "type": "StateEntry",
+          "parentId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+          "sequence": [
+            "d17fe664-8094-4000-add5-f134f753f000"
+          ]
+        }
+      }
     },
     "htmlSites": {},
     "nodeApps": {
@@ -909,10 +1004,67 @@
       ]
     },
     "liveText": {
-      "itemsById": {},
-      "layersByCanvasId": {},
+      "itemsById": {
+        "1ae92777-1598-4000-a2f9-469eff92c000": {
+          "id": "1ae92777-1598-4000-a2f9-469eff92c000",
+          "canvasId": "0eefd220-8e19-4000-a6f1-056e8895e000",
+          "position": {
+            "x": 480,
+            "y": 464,
+            "width": 960,
+            "height": 120,
+            "pct": false
+          },
+          "type": "UserVariable",
+          "userVariableIdOrName": "5139445a-eea9-4000-afe1-e9012bcf5000",
+          "widget": {
+            "foregroundTextColor": {
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 255
+            },
+            "backgroundTextColor": {
+              "a": 255,
+              "r": 0,
+              "g": 0,
+              "b": 0
+            },
+            "font": "System",
+            "fontSize": 70,
+            "backgroundBitmapAssetId": "0",
+            "stretchBitmapFile": false
+          },
+          "textWidget": {
+            "numberOfLines": 3,
+            "delay": 5,
+            "rotation": "0",
+            "alignment": "Center",
+            "scrollingMethod": "Animated"
+          },
+          "useBackgroundColor": false
+        }
+      },
+      "layersByCanvasId": {
+        "0eefd220-8e19-4000-a6f1-056e8895e000": [
+          "1ae92777-1598-4000-a2f9-469eff92c000"
+        ]
+      },
       "dataFeedsByGroupId": {},
-      "canvasesById": {}
+      "canvasesById": {
+        "0eefd220-8e19-4000-a6f1-056e8895e000": {
+          "id": "0eefd220-8e19-4000-a6f1-056e8895e000",
+          "backgroundImageId": "0",
+          "backgroundColor": {
+            "r": 159,
+            "g": 159,
+            "b": 159,
+            "a": 255
+          },
+          "backgroundWidth": 0,
+          "backgroundHeight": 0
+        }
+      }
     },
     "deviceWebPages": {},
     "scriptPlugins": {},
@@ -992,10 +1144,10 @@
   "selection": {
     "hovered": null,
     "selectionContainer": {
-      "id": "5507b640-4dce-4000-ae43-f80613f2a000",
+      "id": "21f25481-f5d1-4000-af5a-85604834b000",
       "type": "ZONE",
       "selectableType": "ZONE",
-      "name": "Zone 1: Video or Image"
+      "name": "Zone 2: Image"
     },
     "selectionEntities": {},
     "prevSelectionEntities": {},
@@ -1030,6 +1182,13 @@
         "position": {
           "x": 300,
           "y": -60
+        }
+      },
+      "460c6d9c-25fd-4000-a76f-d64f25bda000": {
+        "id": "460c6d9c-25fd-4000-a76f-d64f25bda000",
+        "position": {
+          "x": 420,
+          "y": 60
         }
       }
     },
@@ -1102,6 +1261,11 @@
         "k": 1.5
       },
       "5507b640-4dce-4000-ae43-f80613f2a000": {
+        "x": 255.1332159459686,
+        "y": 99.26115983676556,
+        "k": 0.6597539553864471
+      },
+      "21f25481-f5d1-4000-af5a-85604834b000": {
         "x": 0,
         "y": 0,
         "k": 1
@@ -1113,7 +1277,16 @@
     "isOpen": true,
     "showTitles": true
   },
-  "liveText": {},
+  "liveText": {
+    "0eefd220-8e19-4000-a6f1-056e8895e000": {
+      "isOffsetEnabled": true,
+      "offsetX": 100,
+      "offsetY": 100,
+      "isGridLinesEnabled": false,
+      "verticalGridLineCount": 9,
+      "horizontalGridLineCount": 9
+    }
+  },
   "screenLayoutSettings": {
     "selectedLayoutId": "Landscape2x2",
     "screenCount": 4,
