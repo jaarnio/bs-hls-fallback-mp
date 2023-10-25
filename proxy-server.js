@@ -1,19 +1,7 @@
 const express = require("express");
-const http = require("http");
 const axios = require("axios");
 const FormData = require("form-data");
-const path = require("path");
-const fs = require("fs");
-const WebSocket = require("ws");
 const { createProxyMiddleware } = require("http-proxy-middleware");
-
-const app = express();
-const port = 3000;
-const server = http.createServer(app);
-const wss = new WebSocket.Server({ server });
-
-// Define the offline music folder
-const musicFolder = "/storage/sd/www/";
 
 // Define the livestream URL
 const livestreamUrl = "http://192.168.1.154:8080/stream";
@@ -26,15 +14,6 @@ const livestreamProxy = createProxyMiddleware("/stream", {
     [`^/stream`]: "",
   },
 });
-
-// Broadcast a message to all connected clients
-const broadcastMessage = (message) => {
-  wss.clients.forEach((client) => {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(message);
-    }
-  });
-};
 
 // Send UDP Message to Ba:con front end
 async function sendUDPMessage(message) {
@@ -77,31 +56,7 @@ app.use("/stream", (req, res) => {
   });
 });
 
-// Route for getting list of music files
-app.get("/music", (req, res) => {
-  fs.readdir(musicFolder, (err, files) => {
-    if (err) {
-      res.status(500).send("Error");
-    }
-    res.status(200).send(JSON.stringify(files));
-    res.end();
-  });
-});
-
-// Route for serving static media files
-app.use("/music", express.static(musicFolder));
-
-// Route for the default page
-app.get("/", (req, res) => {
-  res.sendFile("/storage/sd/htmlWidgets/index.html");
-});
-
 // Start the express server
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
-});
-
-// Start the websocket server
-server.listen(3001, () => {
-  console.log("Websocket server is listening on port 3001");
 });
