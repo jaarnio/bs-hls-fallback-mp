@@ -497,7 +497,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2023-10-25T08:47:05.759Z"
+      "lastModifiedTime": "2023-10-25T09:25:27.785Z"
     },
     "zones": {
       "zonesById": {
@@ -654,186 +654,6 @@
             "inactivityTime": 0
           }
         },
-        "4d82a678-153f-4000-a04d-8f3f33e7b000": {
-          "id": "4d82a678-153f-4000-a04d-8f3f33e7b000",
-          "name": "02-linkin_park-dont_stay.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "02-linkin_park-dont_stay.mp3",
-            "type": "Audio",
-            "assetId": "23ded42a-ba46-4000-a256-d566fc823000",
-            "volume": 100
-          }
-        },
-        "ad63a472-5648-4000-a838-2e860c2ed000": {
-          "id": "ad63a472-5648-4000-a838-2e860c2ed000",
-          "name": "03-linkin_park-somewhere_i_belong.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "03-linkin_park-somewhere_i_belong.mp3",
-            "type": "Audio",
-            "assetId": "f215327f-b4fb-4000-a65d-f8280af8f000",
-            "volume": 100
-          }
-        },
-        "c4da2391-8e59-4000-acf0-3a7fbfb28000": {
-          "id": "c4da2391-8e59-4000-acf0-3a7fbfb28000",
-          "name": "04-linkin_park-lying_from_you.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "04-linkin_park-lying_from_you.mp3",
-            "type": "Audio",
-            "assetId": "3be8b03d-6650-4000-a7f5-b9084afca000",
-            "volume": 100
-          }
-        },
-        "9ab7eb90-eb05-4000-a8c0-1d516fa7c000": {
-          "id": "9ab7eb90-eb05-4000-a8c0-1d516fa7c000",
-          "name": "05-linkin_park-hit_the_floor.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "05-linkin_park-hit_the_floor.mp3",
-            "type": "Audio",
-            "assetId": "b8025d60-5081-4000-aac0-1d3c6480e000",
-            "volume": 100
-          }
-        },
-        "ce513351-199e-4000-a203-74d7a3144000": {
-          "id": "ce513351-199e-4000-a203-74d7a3144000",
-          "name": "06-linkin_park-easier_to_run.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "06-linkin_park-easier_to_run.mp3",
-            "type": "Audio",
-            "assetId": "415e7606-5343-4000-a783-b97c3b3de000",
-            "volume": 100
-          }
-        },
-        "378c2d0d-cab4-4000-adce-1755adef7000": {
-          "id": "378c2d0d-cab4-4000-adce-1755adef7000",
-          "name": "07-linkin_park-faint.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "07-linkin_park-faint.mp3",
-            "type": "Audio",
-            "assetId": "91fde9bb-5f10-4000-a094-c666d4a5a000",
-            "volume": 100
-          }
-        },
-        "6cb6d1d6-7957-4000-acd0-43fee1cf2000": {
-          "id": "6cb6d1d6-7957-4000-acd0-43fee1cf2000",
-          "name": "08-linkin_park-figure.09.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "08-linkin_park-figure.09.mp3",
-            "type": "Audio",
-            "assetId": "789c05e5-bcf5-4000-af16-3c748898e000",
-            "volume": 100
-          }
-        },
-        "1ab70a03-c8f2-4000-a91f-f3bdbb956000": {
-          "id": "1ab70a03-c8f2-4000-a91f-f3bdbb956000",
-          "name": "09-linkin_park-breaking_the_habit.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "09-linkin_park-breaking_the_habit.mp3",
-            "type": "Audio",
-            "assetId": "3626566c-8188-4000-ad75-28ef06201000",
-            "volume": 100
-          }
-        },
-        "3a683d53-70a3-4000-a262-a17e644cf000": {
-          "id": "3a683d53-70a3-4000-a262-a17e644cf000",
-          "name": "10-linkin_park-from_the_inside.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "10-linkin_park-from_the_inside.mp3",
-            "type": "Audio",
-            "assetId": "24e8d9ae-80b3-4000-a738-fcf59f602000",
-            "volume": 100
-          }
-        },
-        "3a9e31d1-cedb-4000-a50a-f36312ae7000": {
-          "id": "3a9e31d1-cedb-4000-a50a-f36312ae7000",
-          "name": "11-linkin_park-nobodys_listening.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "11-linkin_park-nobodys_listening.mp3",
-            "type": "Audio",
-            "assetId": "4c64f288-dcd5-4000-ae1d-c7c037564000",
-            "volume": 100
-          }
-        },
-        "28d2092f-83ce-4000-a72a-148de7542000": {
-          "id": "28d2092f-83ce-4000-a72a-148de7542000",
-          "name": "12-linkin_park-session.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "12-linkin_park-session.mp3",
-            "type": "Audio",
-            "assetId": "46186ed3-1977-4000-a90b-df5432d6f000",
-            "volume": 100
-          }
-        },
-        "a5f8d375-efaf-4000-a8ad-93499e04a000": {
-          "id": "a5f8d375-efaf-4000-a8ad-93499e04a000",
-          "name": "13-linkin_park-numb.mp3",
-          "tag": "",
-          "container": {
-            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
-            "type": 1
-          },
-          "contentItem": {
-            "name": "13-linkin_park-numb.mp3",
-            "type": "Audio",
-            "assetId": "3cd5d306-5b22-4000-a889-0da6ed3fb000",
-            "volume": 100
-          }
-        },
         "7080095d-4cfb-4000-a2f7-2f9d7764b000": {
           "id": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
           "name": "Stream",
@@ -855,6 +675,51 @@
             },
             "volume": 100
           }
+        },
+        "0f3138e1-6cd6-4000-a498-1e1845fa1000": {
+          "id": "0f3138e1-6cd6-4000-a498-1e1845fa1000",
+          "name": "BCrutchfield - Bossa Nova Elevator Music.wav",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "BCrutchfield - Bossa Nova Elevator Music.wav",
+            "type": "Audio",
+            "assetId": "e7092bcf-cd19-4000-a78b-bfac12eb0000",
+            "volume": 100
+          }
+        },
+        "1ad600e3-f163-4000-a5d5-886783cda000": {
+          "id": "1ad600e3-f163-4000-a5d5-886783cda000",
+          "name": "Elevator music - Bossanova.mp3",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "Elevator music - Bossanova.mp3",
+            "type": "Audio",
+            "assetId": "07ecd198-8b25-4000-acc2-555f6df6c000",
+            "volume": 100
+          }
+        },
+        "7c17c717-5c3b-4000-a902-eac9896c8000": {
+          "id": "7c17c717-5c3b-4000-a902-eac9896c8000",
+          "name": "1.This Is Elevator.wav",
+          "tag": "",
+          "container": {
+            "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+            "type": 1
+          },
+          "contentItem": {
+            "name": "1.This Is Elevator.wav",
+            "type": "Audio",
+            "assetId": "76684452-d7c6-4000-a1d1-e564d8612000",
+            "volume": 100
+          }
         }
       },
       "sequencesByParentId": {
@@ -862,18 +727,9 @@
           "id": "17b8d801-44fe-4000-afef-252c17e2e000",
           "parentType": 1,
           "sequence": [
-            "4d82a678-153f-4000-a04d-8f3f33e7b000",
-            "ad63a472-5648-4000-a838-2e860c2ed000",
-            "c4da2391-8e59-4000-acf0-3a7fbfb28000",
-            "9ab7eb90-eb05-4000-a8c0-1d516fa7c000",
-            "ce513351-199e-4000-a203-74d7a3144000",
-            "378c2d0d-cab4-4000-adce-1755adef7000",
-            "6cb6d1d6-7957-4000-acd0-43fee1cf2000",
-            "1ab70a03-c8f2-4000-a91f-f3bdbb956000",
-            "3a683d53-70a3-4000-a262-a17e644cf000",
-            "3a9e31d1-cedb-4000-a50a-f36312ae7000",
-            "28d2092f-83ce-4000-a72a-148de7542000",
-            "a5f8d375-efaf-4000-a8ad-93499e04a000"
+            "0f3138e1-6cd6-4000-a498-1e1845fa1000",
+            "1ad600e3-f163-4000-a5d5-886783cda000",
+            "7c17c717-5c3b-4000-a902-eac9896c8000"
           ]
         }
       }
@@ -1080,172 +936,46 @@
         "lastModifiedDate": "2023-10-24T21:08:57.594Z",
         "refCount": 1
       },
-      "23ded42a-ba46-4000-a256-d566fc823000": {
-        "id": "23ded42a-ba46-4000-a256-d566fc823000",
-        "name": "02-linkin_park-dont_stay.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+      "e7092bcf-cd19-4000-a78b-bfac12eb0000": {
+        "id": "e7092bcf-cd19-4000-a78b-bfac12eb0000",
+        "name": "BCrutchfield - Bossa Nova Elevator Music.wav",
+        "path": "P:\\Assets\\Audio\\bossa-nova-elevator-music-2022-03-30-22-11-35-utc\\BCrutchfield - Bossa Nova Elevator Music\\",
         "networkId": 0,
         "location": "Local",
         "assetType": "Content",
         "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\02-linkin_park-dont_stay.mp3",
+        "locator": "file://\\P:\\Assets\\Audio\\bossa-nova-elevator-music-2022-03-30-22-11-35-utc\\BCrutchfield - Bossa Nova Elevator Music\\BCrutchfield - Bossa Nova Elevator Music.wav",
         "mediaType": "Audio",
-        "fileSize": 6483814,
-        "lastModifiedDate": "2015-01-24T07:25:22.000Z",
+        "fileSize": 9362038,
+        "lastModifiedDate": "2010-09-01T06:30:54.000Z",
         "refCount": 1
       },
-      "f215327f-b4fb-4000-a65d-f8280af8f000": {
-        "id": "f215327f-b4fb-4000-a65d-f8280af8f000",
-        "name": "03-linkin_park-somewhere_i_belong.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+      "07ecd198-8b25-4000-acc2-555f6df6c000": {
+        "id": "07ecd198-8b25-4000-acc2-555f6df6c000",
+        "name": "Elevator music - Bossanova.mp3",
+        "path": "P:\\Assets\\Audio\\bossanova-elevator-music-2023-05-02-12-14-06-utc\\",
         "networkId": 0,
         "location": "Local",
         "assetType": "Content",
         "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\03-linkin_park-somewhere_i_belong.mp3",
+        "locator": "file://\\P:\\Assets\\Audio\\bossanova-elevator-music-2023-05-02-12-14-06-utc\\Elevator music - Bossanova.mp3",
         "mediaType": "Audio",
-        "fileSize": 7123813,
-        "lastModifiedDate": "2015-01-24T07:25:23.000Z",
+        "fileSize": 5520195,
+        "lastModifiedDate": "2020-03-12T02:16:46.000Z",
         "refCount": 1
       },
-      "3be8b03d-6650-4000-a7f5-b9084afca000": {
-        "id": "3be8b03d-6650-4000-a7f5-b9084afca000",
-        "name": "04-linkin_park-lying_from_you.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
+      "76684452-d7c6-4000-a1d1-e564d8612000": {
+        "id": "76684452-d7c6-4000-a1d1-e564d8612000",
+        "name": "1.This Is Elevator.wav",
+        "path": "P:\\Assets\\Audio\\this-is-elevator-music-2022-06-16-02-01-50-utc\\This Is Elevator\\wav\\",
         "networkId": 0,
         "location": "Local",
         "assetType": "Content",
         "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\04-linkin_park-lying_from_you.mp3",
+        "locator": "file://\\P:\\Assets\\Audio\\this-is-elevator-music-2022-06-16-02-01-50-utc\\This Is Elevator\\wav\\1.This Is Elevator.wav",
         "mediaType": "Audio",
-        "fileSize": 5771932,
-        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
-        "refCount": 1
-      },
-      "b8025d60-5081-4000-aac0-1d3c6480e000": {
-        "id": "b8025d60-5081-4000-aac0-1d3c6480e000",
-        "name": "05-linkin_park-hit_the_floor.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\05-linkin_park-hit_the_floor.mp3",
-        "mediaType": "Audio",
-        "fileSize": 5420186,
-        "lastModifiedDate": "2015-01-24T07:25:28.000Z",
-        "refCount": 1
-      },
-      "415e7606-5343-4000-a783-b97c3b3de000": {
-        "id": "415e7606-5343-4000-a783-b97c3b3de000",
-        "name": "06-linkin_park-easier_to_run.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\06-linkin_park-easier_to_run.mp3",
-        "mediaType": "Audio",
-        "fileSize": 6999204,
-        "lastModifiedDate": "2015-01-24T07:25:22.000Z",
-        "refCount": 1
-      },
-      "91fde9bb-5f10-4000-a094-c666d4a5a000": {
-        "id": "91fde9bb-5f10-4000-a094-c666d4a5a000",
-        "name": "07-linkin_park-faint.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\07-linkin_park-faint.mp3",
-        "mediaType": "Audio",
-        "fileSize": 5507170,
-        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
-        "refCount": 1
-      },
-      "789c05e5-bcf5-4000-af16-3c748898e000": {
-        "id": "789c05e5-bcf5-4000-af16-3c748898e000",
-        "name": "08-linkin_park-figure.09.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\08-linkin_park-figure.09.mp3",
-        "mediaType": "Audio",
-        "fileSize": 6515186,
-        "lastModifiedDate": "2015-01-24T07:25:25.000Z",
-        "refCount": 1
-      },
-      "3626566c-8188-4000-ad75-28ef06201000": {
-        "id": "3626566c-8188-4000-ad75-28ef06201000",
-        "name": "09-linkin_park-breaking_the_habit.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\09-linkin_park-breaking_the_habit.mp3",
-        "mediaType": "Audio",
-        "fileSize": 6353255,
-        "lastModifiedDate": "2015-01-24T07:25:33.000Z",
-        "refCount": 1
-      },
-      "24e8d9ae-80b3-4000-a738-fcf59f602000": {
-        "id": "24e8d9ae-80b3-4000-a738-fcf59f602000",
-        "name": "10-linkin_park-from_the_inside.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\10-linkin_park-from_the_inside.mp3",
-        "mediaType": "Audio",
-        "fileSize": 6000594,
-        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
-        "refCount": 1
-      },
-      "4c64f288-dcd5-4000-ae1d-c7c037564000": {
-        "id": "4c64f288-dcd5-4000-ae1d-c7c037564000",
-        "name": "11-linkin_park-nobodys_listening.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\11-linkin_park-nobodys_listening.mp3",
-        "mediaType": "Audio",
-        "fileSize": 5680243,
-        "lastModifiedDate": "2015-01-24T07:26:05.000Z",
-        "refCount": 1
-      },
-      "46186ed3-1977-4000-a90b-df5432d6f000": {
-        "id": "46186ed3-1977-4000-a90b-df5432d6f000",
-        "name": "12-linkin_park-session.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\12-linkin_park-session.mp3",
-        "mediaType": "Audio",
-        "fileSize": 5041613,
-        "lastModifiedDate": "2015-01-24T07:25:27.000Z",
-        "refCount": 1
-      },
-      "3cd5d306-5b22-4000-a889-0da6ed3fb000": {
-        "id": "3cd5d306-5b22-4000-a889-0da6ed3fb000",
-        "name": "13-linkin_park-numb.mp3",
-        "path": "P:\\Assets\\Audio\\Linkin.Park-Meteora\\",
-        "networkId": 0,
-        "location": "Local",
-        "assetType": "Content",
-        "scope": "9560ed3374e2cc1c",
-        "locator": "file://\\P:\\Assets\\Audio\\Linkin.Park-Meteora\\13-linkin_park-numb.mp3",
-        "mediaType": "Audio",
-        "fileSize": 6176360,
-        "lastModifiedDate": "2015-01-24T07:25:25.000Z",
+        "fileSize": 10806884,
+        "lastModifiedDate": "2020-09-07T19:11:56.000Z",
         "refCount": 1
       }
     },
@@ -1267,24 +997,10 @@
       "selectableType": "ZONE",
       "name": "Zone 1: Video or Image"
     },
-    "selectionEntities": {
-      "dfe96e7d-07f8-4000-a6d5-b85b75621000": {
-        "id": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
-        "type": "Event",
-        "selectableType": "TRANSITION",
-        "selectableData": null
-      }
-    },
-    "prevSelectionEntities": {
-      "71e2a7b4-bea1-4000-ac2b-f408c80b0000": {
-        "id": "71e2a7b4-bea1-4000-ac2b-f408c80b0000",
-        "type": "EventHandler",
-        "selectableType": "STATE",
-        "selectableData": null
-      }
-    },
+    "selectionEntities": {},
+    "prevSelectionEntities": {},
     "isEventAdvancedEnabled": false,
-    "activeAssetMenuTab": "WIDGETS"
+    "activeAssetMenuTab": "ASSETS"
   },
   "interactiveCanvas": {
     "statePositionById": {
@@ -1386,8 +1102,8 @@
         "k": 1.5
       },
       "5507b640-4dce-4000-ae43-f80613f2a000": {
-        "x": 516,
-        "y": 144,
+        "x": 0,
+        "y": 0,
         "k": 1
       }
     },
