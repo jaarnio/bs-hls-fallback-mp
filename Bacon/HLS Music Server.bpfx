@@ -497,7 +497,7 @@
         }
       },
       "wssDeviceSpec": {},
-      "lastModifiedTime": "2023-10-25T09:44:22.987Z"
+      "lastModifiedTime": "2023-10-25T09:52:07.150Z"
     },
     "zones": {
       "zonesById": {
@@ -846,6 +846,15 @@
           "userVariableToAssignWildcard": "0"
         },
         "action": "None"
+      },
+      "81d80125-f197-4000-aec0-b62695c37000": {
+        "id": "81d80125-f197-4000-aec0-b62695c37000",
+        "name": "Media List_ev_ev_ev",
+        "type": "MediaListEnd",
+        "mediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
+        "disabled": false,
+        "data": null,
+        "action": "None"
       }
     },
     "transitions": {
@@ -879,6 +888,14 @@
           "name": "Event Handler_ev_tr",
           "eventId": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
           "targetMediaStateId": "7080095d-4cfb-4000-a2f7-2f9d7764b000",
+          "type": "No effect",
+          "duration": 0
+        },
+        "851ea714-0c2f-4000-ac06-092fb03ba000": {
+          "id": "851ea714-0c2f-4000-ac06-092fb03ba000",
+          "name": "Media List_tr_ev",
+          "eventId": "81d80125-f197-4000-aec0-b62695c37000",
+          "targetMediaStateId": "17b8d801-44fe-4000-afef-252c17e2e000",
           "type": "No effect",
           "duration": 0
         }
@@ -1144,13 +1161,26 @@
   "selection": {
     "hovered": null,
     "selectionContainer": {
-      "id": "21f25481-f5d1-4000-af5a-85604834b000",
+      "id": "5507b640-4dce-4000-ae43-f80613f2a000",
       "type": "ZONE",
-      "selectableType": "ZONE",
-      "name": "Zone 2: Image"
+      "selectableType": "ZONE"
     },
-    "selectionEntities": {},
-    "prevSelectionEntities": {},
+    "selectionEntities": {
+      "81d80125-f197-4000-aec0-b62695c37000": {
+        "id": "81d80125-f197-4000-aec0-b62695c37000",
+        "type": "Event",
+        "selectableType": "TRANSITION",
+        "selectableData": null
+      }
+    },
+    "prevSelectionEntities": {
+      "17b8d801-44fe-4000-afef-252c17e2e000": {
+        "id": "17b8d801-44fe-4000-afef-252c17e2e000",
+        "type": "MediaList",
+        "selectableType": "STATE",
+        "selectableData": null
+      }
+    },
     "isEventAdvancedEnabled": false,
     "activeAssetMenuTab": "ASSETS"
   },
@@ -1252,6 +1282,11 @@
         "id": "dfe96e7d-07f8-4000-a6d5-b85b75621000",
         "displayType": "DisplayLabel",
         "labelLocation": "Bottom"
+      },
+      "81d80125-f197-4000-aec0-b62695c37000": {
+        "id": "81d80125-f197-4000-aec0-b62695c37000",
+        "displayType": "DisplayLabel",
+        "labelLocation": "Bottom"
       }
     },
     "viewTransformByZoneId": {
@@ -1261,9 +1296,9 @@
         "k": 1.5
       },
       "5507b640-4dce-4000-ae43-f80613f2a000": {
-        "x": 255.1332159459686,
-        "y": 99.26115983676556,
-        "k": 0.6597539553864471
+        "x": 0,
+        "y": 0,
+        "k": 1
       },
       "21f25481-f5d1-4000-af5a-85604834b000": {
         "x": 0,
